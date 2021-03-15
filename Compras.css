@@ -1,0 +1,570 @@
+*{
+
+	font-family: georgia;
+
+}
+/*  -----------------------------------------------------   
+               HEADER - BARRA DE NAVEGACION 
+---------------------------------------------------------*/
+/*boton desplegable y ajuste de menu*/
+
+/*ocultar los descuentos*/
+ul li ul li {
+	display:none;
+	background: #034ea2;
+
+}
+
+
+/*aparecen los descuentos al hacer hover*/
+ul li:hover > ul li{
+	display: block;
+
+}
+/*aparecen los descuentos al hacer click
+ul li:target > ul li{
+	display: block;
+}
+color y ancho del encabezado*/
+header{
+	width: 100%;
+	background: #034ea2;
+	margin-top:-100px;
+}
+/*desplgable oculto en pantalla grande*/
+#btn-menu{
+	display: none;
+}
+/*checked oculto en pantalla grande*/
+header label{
+	display: none;
+	width: 30px;
+	height: 30px;
+	padding: 10px;
+	
+	/*border-right:1px solid #fff; Por ahora lo saco, para que te fijes si queda mejor */  
+}
+/*desplegable oculto*/
+header label:hover{
+	cursor: pointer;
+	background: #3013E3;
+}
+/*estilo del nav*/
+#nav_C ul{
+	margin:0;
+	list-style: none;
+	padding: 0;
+
+
+}
+#BtnHotel {
+
+	border-top: 2px solid #ffc107;
+
+}
+.nav > li{
+	float: left;
+}
+/*estilo de cada uno de los botones de encabezado*/
+#nav_C li a{
+	display: block;
+	padding: 10px 20px 7px  20px;
+	text-decoration: none;
+	vertical-align: sub;
+
+}
+#nav_C .li:hover{
+	/*background:#3013E3; Este es el hover que saque, lo dejo por las dudas*/ 
+	border-bottom: 2px solid #ffc107;
+
+}
+
+#nav_C{ /*Nav_C engloba a toda la barra de navegacion*/
+	
+	height: 80px; /*Le da la altura, color y tamaño*/
+	background-color: #034ea2;
+	text-align: left;
+	box-sizing: border-box;
+	opacity: 0.98;
+	top: -100px;
+
+
+}
+/*hover de los descuentos*/
+.list:hover{
+	background-color:#0369A2;
+	
+}
+.list{
+	border-bottom: 1px solid white;
+
+
+}
+
+#Titulo {
+
+	font-size: 40px;
+	position: absolute;
+	left: 100px;
+	top: 10px;
+
+}
+
+
+
+#a1, #a1-c , #a2 , #a4 , #a5 , #a6, .lstCat{  /*Estos id engloban a los botones de la barra de navegacion*/
+
+	color: white; /*Se les asigna un color de letra blanco*/
+   
+}
+
+.a3{ /*Corresponde al escudo de Boca situado en el navegador*/
+
+	margin: 20px; /*Se le asigna los margenes y una posicion relativa*/
+	margin-top: 10px;
+	margin-right: 60px;
+	position: relative;
+	float: right;
+
+
+}
+
+.Btn_img { /*Imagenes que acompañan a los botones*/
+
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+
+}
+.Boca-img{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+}
+/*  -----------------------------------------------------   
+               BODY - TABLAS
+---------------------------------------------------------*/
+body{
+
+	padding-top: 6em;
+
+}
+
+h4{ /*subtitulo que dice selecciona tu ubicación*/
+	display: inline-block;
+	padding: 0;
+	margin-top: .5px;
+	margin-bottom: 5px;
+	color: #97989B;
+}
+
+.contenedor { /*Div que contiene todas las tablas*/
+
+	text-align: center;
+	width: 100%;
+	height: 1000px;
+
+}
+
+
+
+#select{
+	width: 150px;
+	background: #E7E9F0;
+	transition: 10s ease-in;
+	border-radius: 30px;
+	font-family: 'PT sans';
+	padding: 3px;
+	margin-bottom: 20px;
+	cursor: pointer;
+	background: transparent;
+	outline: none;
+
+}
+
+#miboton{
+	background: transparent;	
+	border: 0px;
+	background-image: url(buscador.png);
+	width: 50px;
+	height: 50px;
+	margin-right: 0.5px;
+	outline: none;
+	cursor: pointer;
+
+}
+
+#img_boton_buscar {
+
+		margin-right: 5px;
+
+}
+#img_boton_buscar:hover {
+
+		content: url(buscador2.png);
+
+}
+
+
+#tablas{ /*Contenedor de todas las tablas*/
+
+	border-spacing: 0px 10px;
+	table-layout: separate;
+	box-sizing: border-box;
+	text-align: center;
+	border-collapse: collapse;
+
+}
+
+.tabla { /*Caracteristicas de las Tablas*/
+
+	width: 1000px;
+	text-align: center;
+	border-collapse: collapse;
+	box-sizing: border-box;
+
+}
+
+.thead { /*Encabezado de la Tabla*/
+
+	background-color: #034ea2;
+	color: white;
+
+}
+.tbody { /*Cuerpo de la Tabla*/
+
+	border-bottom: solid 1px #F0F0F0;
+
+}
+
+.img_googlemaps{ /*Imagen Boton Ubicacion*/
+
+	width: 60px;
+	height: 40px;
+
+}
+
+.btn_ubicacion { /*Boton Ubicacion*/
+
+	border-spacing: 30px 10px;
+
+}
+
+.btn_ubicacion:hover { /*Boton Ubicacion cuando se pasa por encima*/
+
+	background-color: #F0F0F0;
+
+}
+
+h1 { /*Titulo*/
+
+	text-align: center;
+	font-size: 24px;
+
+}
+
+.table_hotel{
+
+	border-spacing: 50px 10px;
+	table-layout: separate;
+	box-sizing: border-box;
+
+}
+
+td { /*Columnas*/
+	padding: 10px 50px;
+	border: 2px inset blue;
+	border: 0;
+
+}
+
+
+/*  -----------------------------------------------------   
+               FOOTER - PIE DE PAGINA 
+---------------------------------------------------------*/
+
+.footer-basic {
+  padding:40px 0;
+  background-color:#383A3A;
+  color:#fff;
+  margin-top: 3rem;
+  width: 100%;
+  margin-top: 80vh;
+
+}
+
+.footer-basic ul {
+  padding:0;
+  list-style:none;
+  text-align:center;
+  font-size:.9rem;
+  line-height:1.6;
+  margin-bottom:0;
+  display: flex;
+  justify-content: center;
+
+}
+
+.footer-basic li {
+  padding:0 10px;
+}
+
+.footer-basic ul a {
+  color:inherit;
+  text-decoration:none;
+  opacity:0.8;
+}
+
+.footer-basic ul a:hover {
+  opacity:1;
+}
+
+.footer-basic .social {
+  text-align:center;
+  padding-bottom:25px;
+}
+
+.footer-basic .social > a {
+  font-size:24px;
+  width:40px;
+  height:40px;
+  line-height:40px;
+  display:inline-block;
+  text-align:center;
+  border-radius:50%;
+  border:1px solid #ccc;
+  margin:0 8px;
+  color:inherit;
+  opacity:0.75;
+}
+
+.footer-basic .social > a:hover {
+  opacity:0.9;
+}
+
+.footer-basic .copyright {
+  margin-top:15px;
+  text-align:center;
+  font-size:13px;
+  color:#aaa;
+  margin-bottom:0;
+}
+
+/*  -----------------------------------------------------   
+               RESPONSIVE - AJUSTE PANTALLA 
+---------------------------------------------------------*/
+
+@media  (max-width: 768px){
+
+/*  -----------------------------------------------------   
+               HEADER - BARRA DE NAVEGACION 
+---------------------------------------------------------*/
+	header{
+		margin-top: -2.9rem;
+	}
+
+	#nav_C { /*EL header se ajusta a la pantalla nueva*/
+
+			height:13rem;/*altura para que quede bien menu*/
+			width: 70%;
+			position: absolute;
+			margin-left: -70%;   /*se oculta el menu*/
+			transition: all 0.5s;
+			overflow: scroll;
+			top:3rem;
+	}
+      /*arregla el float left anterior*/
+	.nav > li{
+ 	float: none;
+ }
+ /*comienza ajuste de tamaño de los iconos del nav*/
+	.Btn_img{
+		width: 20px;
+		height: 20px;
+	}
+	/*Cambio la img del boton del desplegable de de descuentos por un flecha, para que sea mas intuitivo*/
+	#Btn_imgDescuentos {
+
+		content: url("flecha.png");
+		width: 15px;
+		height: 15px;
+
+	}
+	.Boca-img{
+		width: 25px;
+		height: 25px;
+	}
+
+ /*termina*/
+/*se muestra la imagen del desplegable*/
+ header label{
+ 	display: block;
+ }
+
+ /*estilo del menu desplegable*/
+ #nav_C{
+ 	background: #034ea2;
+ }
+#nav_C ul {
+	flex-direction: column;
+}
+
+#nav_C li{
+	border-top: 1px solid white;
+}
+/*se muestra el menu al hacer click*/	
+
+#btn-menu:checked ~ #nav_C{
+	margin: 0;
+}
+
+	.a3, #a1, #a2 { /*La imagen del escudo, y el texto de los botones desaparecen*/
+
+		display: none;
+
+	}
+
+#BtnHotel, #a8 , #a9 , #a10 , #a11{
+
+	border-top: 1px solid #034ea2;
+
+}	
+
+ header nav {
+ 	overflow: scroll;
+ 	position: fixed;
+ }
+ 
+ #nav_C ul li ul li{
+ 	background: #3A92C8;
+ 	
+ }
+
+
+
+/*  -----------------------------------------------------   
+               BODY - TABLAS
+---------------------------------------------------------*/
+
+	.tabla {
+
+		box-sizing: border-box;
+		width: 100%;
+		font-size: .8em;
+
+	}
+
+	table tr{
+
+		display: flex;
+		flex-direction: column;
+		border: 1.5px solid silver;
+		padding: : 1em;
+		margin-top: 1em;
+		margin-left: .5em;
+		margin-right: 1em;
+		margin-bottom: .5em;
+
+	}
+
+	table td[data-titulo]{
+
+		display: flex;
+	
+	}
+     table td[data-titulo]::before{
+       
+       content: attr( data-titulo );
+       width: 100px;
+       text-align: left;
+       margin-top: 13px;
+       color: silver;
+       font-weight: bold; ;
+
+    }
+
+	table .thead{
+
+		display: none;
+
+	}
+
+	.theadNombre{
+
+		background-color: #034ea2;
+
+	}
+
+
+	.thead {
+
+	background-color: #034ea2;
+	color: white;
+
+	}
+
+	.tabla {
+	width: auto;
+	text-align: center;
+	border-collapse: collapse;
+	box-sizing: border-box;
+
+	}
+
+	.tabla {
+
+	box-sizing: border-box;
+	width: 100%;
+
+	}
+
+	table {
+
+    	width:100%;
+    	box-sizing: border-box;
+
+    }
+    thead {
+
+    	display: none;
+
+    }
+    tr:nth-of-type(2n) {
+
+    	background-color: inherit;
+
+    }
+    tr td:first-child {
+           
+    	font-weight:bold;
+    	font-size: 14px;
+
+    }
+    tbody td {
+
+	    display: block;
+	    text-align:center;
+	    border-bottom: solid 1px #F0F0F0;
+
+    }
+    tbody td:before {
+
+	    content: attr(data-th);
+	    display: block;
+	    text-align:center;
+
+    }
+    body{
+
+    padding-top: 3em;
+    
+    }
+
+
+/*  -----------------------------------------------------   
+               FOOTER - PIE DE PAGINA 
+---------------------------------------------------------*/
+.footer-basic{
+	margin-top:4100px;
+}
+}

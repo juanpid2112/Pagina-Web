@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>
+		Entretenimiento
+	</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="normalize.css">
+	<link rel="stylesheet" type="text/css" href="Entretenimiento.css">
+	<link rel = "preconnect" href = "https://fonts.gstatic.com">
+	<link href = "https://fonts.googleapis.com/css2? family = PT + Serif & display = swap" rel = "hoja de estilo">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<link rel="icon" type="img/png" href="EscudoBoke.png">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js">
+	</script>
+
+	<script src="Entretenimiento.js"></script>
+
+		<header>
+
+		<input type="checkbox" id="btn-menu">
+		<label for="btn-menu">
+			<img src="BtnCerrado.png" height="30x">
+		</label>
+		
+		<! ---Barra de Navegacion--- >
+		<nav id="nav_C"> 
+
+				<! Escudo Boca>
+
+				<img src="EscudoBoke.png" height="55 px" width="50 px" class="a3">	
+				<img src="EscudoPeñaLasVarillas2.png" height="55 px" width="50 px" class="a3">	
+		       <ul class="nav">
+		       	<li class="li" class="submenu">
+		       		<a href="javascript:MostrarMenu();" id="a1" > <img src="Descuentos.png" class="Btn_img" id="Btn_imgDescuentos">	 Descuentos</a>
+		       		
+		       		<ul class="children" id="ul1">
+		       			<li class="list" id="BtnHotel">
+		       				<a href="Hoteles.html" id="a7" class="lstCat"> <img src="Hotel.png" height="25px"> Hoteles</a>
+		       			</li>
+		       			<li class="list" >
+		       				<a href="Restaurantes.html" id="a8" class="lstCat"><img src="Restaurantes.png" height="25px"> Restauantes</a>
+		       			</li>	
+		       			<li class="list">
+		       				<a href="Compras.html" id="a9" class="lstCat"><img src="https://image.flaticon.com/icons/png/512/1687/1687055.png" height="25px">Compras</a>
+		       			</li>
+		       			<li class="list">	
+		       				<a href="Servicios.html" id="a10" class="lstCat"><img src="https://image.flaticon.com/icons/png/512/1687/1687055.png" height="25px">Servicios</a>
+		       			</li>
+		       			<li class="list">	
+		       				<a href="Indumentaria.html" id="a11" class="lstCat"><img src="https://image.flaticon.com/icons/png/512/1687/1687055.png" height="25px">Indumentaria</a>
+		       			</li>
+		       			<li class="list">	
+		       				<a href="Cursos.html" id="a12" class="lstCat"><img src="https://image.flaticon.com/icons/png/512/1687/1687055.png" height="25px">Cursos</a>
+		       			</li>
+		       			<li class="list">	
+		       				<a href="Tecnologia.html" id="a13" class="lstCat"><img src="https://image.flaticon.com/icons/png/512/1687/1687055.png" height="25px">Tecnologia</a>
+		       			</li>
+		       			<li class="list">	
+		       				<a href="Vehiculos.html" id="a14" class="lstCat"><img src="https://image.flaticon.com/icons/png/512/1687/1687055.png" height="25px">Vehiculos</a>
+		       			</li>
+		       			<li class="list">	
+		       				<a href="Turismo.html" id="a15" class="lstCat"><img src="https://image.flaticon.com/icons/png/512/1687/1687055.png" height="25px">Turismo</a>
+		       			</li>
+		       		
+		       			<li class="list">	
+		       				<a href="Gimnasios.html" id="a17" class="lstCat"><img src="https://image.flaticon.com/icons/png/512/1687/1687055.png" height="25px">Gimnasios</a>
+		       			</li>	
+
+		       		</ul>
+
+		       	</li>
+		       	<li class="li">
+		       		<a href="index.html" id="a2"><img src="inicio.png" class="Btn_img">  Inicio </a>
+		       	</li>
+		       	<li class="li"> 
+		       		<a href="https://soysocio.bocajuniors.com.ar/" id="a4" target="_BLANK"><img src="insignia.png" class="Btn_img">Hacete socio</a>
+		       	</li>
+		       	<li class="li">
+		       		<a href="Peñas.html" id="a5"><img src="inicio.png" class="Btn_img">Peñas de Córdoba</a>
+		       	</li>
+		       	<li class="li">
+		       		<a href="https://www.bocajuniors.com.ar/programaoficial" id="a6" target="_BLANK"><img src="revista.png" class="Btn_img">Revista</a>
+		       	</li>
+		       </ul>
+		   </nav>
+</header>
+
+</head>
+
+<body>
+
+	<center>
+		<h1 id="h1">
+			Encontrá los mejores descuentos en entretenimiento de Boca Juniors.
+		</h1>
+	</center> 
+	<center>
+		<h4 class="titulo-de-buscador">
+			Selecciona tu ubicación 
+			<img src="ubicacion.png" height="20px">
+		</h4>
+	</center>
+<div class="contenedor">
+<select id="select" >
+			
+
+				<option value="">
+					Todos
+				</option>
+
+				<option value="1">
+					Las Varillas
+				</option>
+
+				<option value="2">
+					Carlos Paz
+				</option>
+
+				<option value="3">
+					Otros
+				</option>
+
+			</select>
+
+
+			<button id="miboton">
+				<center>
+				<img src="buscador.png" width="30px" height="30px" id="img_boton_buscar">
+				</center>
+			</button>
+
+
+	<div id="tablas">
+		<div class="t" id="Tabla1">
+
+			<center>
+		
+			<table class="tabla">
+				<tr class="thead"> 
+					<td>
+						<p>
+							Nombre
+						</p>
+					</td>
+					<td > 
+						Las Varillas
+					</td>
+					<td> 
+						<p>
+							Descuento
+						</p>
+					</td>
+					<td>
+						<p>
+							Día
+						</p>
+					</td>
+					<td>
+						<p>
+							Producto
+						</p>
+					</td>
+				</tr>
+				<tr class = "tbody"> 
+					<td data-titulo= "Nombre ">
+						<p>
+							Negocio 1
+						</p>
+					</td>
+					<td class="btn_ubicacion" data-titulo= Ubicación> 
+						<a href="https://goo.gl/maps/ibDSjp5QTXZ9eDqS9" target="blank">
+							<img src="iconogooglemaps.png" class="img_googlemaps">
+						</a>
+					</td>
+					<td data-titulo= "Descuento"> 
+						<p>
+							%20 off
+						</p>
+					</td>
+						<td data-titulo="día"><p>
+						Martes y jueves
+					</p>
+				</td>
+                 <td data-titulo="servicio">
+                 	<p>
+                 	 Camiseta de Boca Juniors
+                 	</p>
+                 </td>
+				</tr>
+				<tr class = "tbody"> 
+					<td data-titulo= "Nombre">
+						<p>
+							Negocio 2
+						</p>
+					</td>
+					<td class="btn_ubicacion" data-titulo= "Ubicación"> 
+						<a href="https://goo.gl/maps/ibDSjp5QTXZ9eDqS9" target="blank">
+							<img src="iconogooglemaps.png" class="img_googlemaps">
+						</a>
+					</td>
+					<td data-titulo= "Descuento"> 
+						<p>
+							%15 off
+						</p>
+					</td>
+						<td data-titulo="día"><p>
+						Martes y jueves
+					</p>
+				</td>
+                 <td data-titulo="servicio">
+                 	<p>
+                 	 Camiseta de Boca Juniors
+                 	</p>
+                 </td>
+				</tr>
+				<tr class = "tbody"> 
+					<td data-titulo="Nombre">
+						<p>
+							Negocio 3
+						</p>
+					</td>
+					<td class="btn_ubicacion" data-titulo="Ubicación"> 
+						<a href="https://goo.gl/maps/ibDSjp5QTXZ9eDqS9" target="blank">
+							<img src="iconogooglemaps.png" class="img_googlemaps">
+						</a>
+					</td>
+					<td data-titulo="Descuento"> 
+						<p>
+							%15 off
+						</p>
+					</td>
+						<td data-titulo="día"><p>
+						Martes y jueves
+					</p>
+				</td>
+                 <td data-titulo="servicio">
+                 	<p>
+                 	 Camiseta de Boca Juniors
+                 	</p>
+                 </td>
+				</tr>
+				<tr class = "tbody"> 
+					<td data-titulo="Nombre">
+						<p>
+							Negocio 4
+						</p>
+					</td>
+					<td class="btn_ubicacion" data-titulo="Ubicación"> 
+						<a href="https://goo.gl/maps/ibDSjp5QTXZ9eDqS9" target="blank">
+							<img src="iconogooglemaps.png" class="img_googlemaps">
+						</a>
+					</td>
+					<td data-titulo="Descuento"> 
+						<p>
+							%15 off
+						</p>
+					</td>
+						<td data-titulo="día"><p>
+						Martes y jueves
+					</p>
+				</td>
+                 <td data-titulo="servicio">
+                 	<p>
+                 	Camiseta de Boca Juniors
+                 	</p>
+                 </td>
+				</tr>
+				<tr class = "tbody"> 
+					<td data-titulo="Nombre">
+						<p>
+							Negocio 5
+						</p>
+					</td>
+					<td class="btn_ubicacion" data-titulo="Ubicación"> 
+						<a href="https://goo.gl/maps/ibDSjp5QTXZ9eDqS9" target="blank">
+							<img src="iconogooglemaps.png" class="img_googlemaps">
+						</a>
+					</td>
+					<td data-titulo=" Descuento"> 
+						<p>
+							%15 off
+						</p>
+					</td>
+						<td data-titulo="día"><p>
+						Martes y jueves
+					</p>
+				</td>
+                 <td data-titulo="servicio">
+                 	<p>
+                 	 Camiseta de Boca Juniors
+                 	</p>
+                 </td>
+				</tr>
+				
+			</table>
+		</center>
+	</div>
+	<div class="t" id="Tabla2">
+		<center>
+			<table class="tabla">
+						<tr class="thead"> 
+							<td >
+								<p>
+									Nombre
+								</p>
+							</td>
+							<td> 
+								Carlos Paz
+							</td>
+							<td  > 
+								<p>
+									Descuento
+								</p>
+							</td>
+							<td>
+								<p>
+									Día
+								</p>
+							</td>
+							<td>
+								<p>
+									Producto
+								</p>
+							</td>
+						</tr>
+						<tr class = "tbody"> 
+							<td data-titulo="Nombre">
+								<p>
+									Negocio 1
+								</p>
+							</td>
+							<td class="btn_ubicacion" data-titulo="Ubicación"> 
+								<a href="https://goo.gl/maps/ibDSjp5QTXZ9eDqS9" target="blank" >
+									<img src="iconogooglemaps.png" class="img_googlemaps">
+								</a>
+							</td>
+							<td data-titulo="Descuento"> 
+								<p>
+									%15 off
+								</p>
+							</td>
+								<td data-titulo="día"><p>
+						Martes y jueves
+					</p>
+				</td>
+                 <td data-titulo="servicio">
+                 	<p>
+                 	 Camiseta de Boca Juniors
+                 	</p>
+                 </td>
+						</tr>
+						<tr class = "tbody"> 
+							<td data-titulo="Nombre">
+								<p>
+									Negocio 2
+								</p>
+							</td>
+							<td class="btn_ubicacion" data-titulo="Ubicación"> 
+								<a href="https://goo.gl/maps/ibDSjp5QTXZ9eDqS9" target="blank" >
+									<img src="iconogooglemaps.png" class="img_googlemaps">
+								</a>
+							</td>
+							<td data-titulo="Descuento"> 
+								<p>
+									%15 off
+								</p>
+							</td>
+								<td data-titulo="día"><p>
+						Martes y jueves
+					</p>
+				</td>
+                 <td data-titulo="servicio">
+                 	<p>
+                 	 Camiseta de Boca Juniors
+                 	</p>
+                 </td>
+						</tr>
+						<tr class = "tbody"> 
+							<td data-titulo="Nombre">
+								<p>
+									Negocio 3
+								</p>
+							</td>
+							<td class="btn_ubicacion" data-titulo="Ubicación"> 
+								<a href="https://goo.gl/maps/ibDSjp5QTXZ9eDqS9" target="blank">
+									<img src="iconogooglemaps.png" class="img_googlemaps">
+								</a>
+							</td>
+							<td data-titulo="Descuento"> 
+								<p>
+									%15 off
+								</p>
+							</td>
+								<td data-titulo="día"><p>
+						Martes y jueves
+					</p>
+				</td>
+                 <td data-titulo="servicio">
+                 	<p>
+                 	Camiseta de Boca Juniors
+                 	</p>
+                 </td>
+						</tr>
+						<tr class = "tbody"> 
+							<td data-titulo="Nombre">
+								<p>
+									Negocio 4
+								</p>
+							</td>
+							<td class="btn_ubicacion" data-titulo="Ubicación"> 
+								<a href="https://goo.gl/maps/ibDSjp5QTXZ9eDqS9" target="blank" >
+									<img src="iconogooglemaps.png" class="img_googlemaps">
+								</a>
+							</td>
+							<td data-titulo="Descuento"> 
+								<p>
+									%15 off
+								</p>
+							</td>
+								<td data-titulo="día"><p>
+						Martes y jueves
+					</p>
+				</td>
+                 <td data-titulo="servicio">
+                 	<p>
+                 	 Camiseta de Boca Juniors
+                 	</p>
+                 </td>
+						</tr>
+						<tr class = "tbody"> 
+							<td data-titulo="Nombre">
+								<p>
+									Negocio 5
+								</p>
+							</td>
+							<td class="btn_ubicacion" data-titulo="Ubicación"> 
+								<a href="https://goo.gl/maps/ibDSjp5QTXZ9eDqS9" target="blank">
+									<img src="iconogooglemaps.png" class="img_googlemaps">
+								</a>
+							</td>
+							<td data-titulo="Descuento"> 
+								<p>
+									%15 off
+								</p>
+							</td>
+								<td data-titulo="día"><p>
+						Martes y jueves
+					</p>
+				</td>
+                 <td data-titulo="servicio">
+                 	<p>
+                 	Camiseta de Boca Juniors
+                 	</p>
+                 </td>
+						</tr>
+
+					</table>
+				</center>
+				</div>
+	<div class="t" id="Tabla3">
+		<center>
+			<table class="tabla">
+				<tr class="thead"> 
+					<td >
+						<p>
+							Nombre
+						</p>
+					</td>
+					<td> 
+						Otro
+					</td>
+					<td> 
+						<p>
+							Descuento
+						</p>
+					</td>
+					<td>
+						<p>
+							Día
+						</p>
+					</td>
+					<td>
+						<p>
+							Producto
+						</p>
+					</td>
+				</tr >
+				<tr class = "tbody"> 
+					<td data-titulo="Nombre">
+						<p>
+							Negocio 1
+						</p>
+					</td>
+					<td class="btn_ubicacion" data-titulo="Ubicación"> 
+						<a href="https://goo.gl/maps/ibDSjp5QTXZ9eDqS9" target="blank">
+							<img src="iconogooglemaps.png" class="img_googlemaps">
+						</a>
+					</td>
+					<td data-titulo="Descuento"> 
+						<p>
+							%15 off
+						</p>
+					</td>
+						<td data-titulo="día"><p>
+						Martes y jueves
+					</p>
+				</td>
+                 <td data-titulo="servicio">
+                 	<p>
+                 	 Camiseta de Boca Juniors
+                 	</p>
+                 </td>
+				</tr>
+				<tr class = "tbody"> 
+					<td data-titulo="Nombre">
+						<p>
+							Negocio 2
+						</p>
+					</td>
+					<td class="btn_ubicacion" data-titulo="Ubicación"> 
+						<a href="https://goo.gl/maps/ibDSjp5QTXZ9eDqS9" target="blank">
+							<img src="iconogooglemaps.png" class="img_googlemaps">
+						</a>
+					</td>
+					<td data-titulo="Descuento"> 
+						<p>
+							%15 off
+						</p>
+					</td>
+						<td data-titulo="día"><p>
+						Martes y jueves
+					</p>
+				</td>
+                 <td data-titulo="servicio">
+                 	<p>
+                 	 Camiseta de Boca Juniors
+                 	</p>
+                 </td>
+				</tr>
+				<tr class = "tbody"> 
+					<td data-titulo="Nombre">
+						<p>
+							Negocio 3
+						</p>
+					</td>
+					<td class="btn_ubicacion" data-titulo="Ubicación"> 
+						<a href="https://goo.gl/maps/ibDSjp5QTXZ9eDqS9" target="blank">
+							<img src="iconogooglemaps.png" class="img_googlemaps">
+						</a>
+					</td>
+					<td data-titulo="Descuento"> 
+						<p>
+							%15 off
+						</p>
+					</td>
+						<td data-titulo="día"><p>
+						Martes y jueves
+					</p>
+				</td>
+                 <td data-titulo="servicio">
+                 	<p>
+                 	Camiseta de Boca Juniors
+                 	</p>
+                 </td>
+				</tr>
+				<tr class = "tbody"> 
+					<td data-titulo="Nombre">
+						<p>
+							Negocio 4
+						</p>
+					</td>
+					<td class="btn_ubicacion" data-titulo="Ubicación"> 
+						<a href="https://goo.gl/maps/ibDSjp5QTXZ9eDqS9" target="blank">
+							<img src="iconogooglemaps.png" class="img_googlemaps">
+						</a>
+					</td>
+					<td data-titulo="Descuento"> 
+						<p>
+							%15 off
+						</p>
+					</td>
+						<td data-titulo="día"><p>	
+						Martes y jueves
+					</p>
+				</td>
+                 <td data-titulo="servicio">
+                 	<p>
+                 	 Camiseta de Boca Juniors
+                 	</p>
+                 </td>
+				</tr>
+				<tr class = "tbody"> 
+					<td data-titulo="Nombre">
+						<p>
+							Negocio 5
+						</p>
+					</td>
+					<td class="btn_ubicacion" data-titulo="Ubicación"> 
+						<a href="https://goo.gl/maps/ibDSjp5QTXZ9eDqS9" target="blank">
+							<img src="iconogooglemaps.png" class="img_googlemaps">
+						</a>
+					</td>
+					<td data-titulo="Descuento"> 
+						<p>
+							%15 off
+						</p>
+					</td>
+						<td data-titulo="día"><p>
+						Martes y jueves
+					</p>
+				</td>
+                 <td data-titulo="servicio">
+                 	<p>
+                 	 Camiseta de Boca Juniors
+                 	</p>
+                 </td>
+				</tr>
+			</table>
+		</center>
+		</div>
+		</div>
+	</div>
+
+
+
+<script type="text/javascript"> 
+		$(document).ready(function() {
+			var ancho = screen.width;
+			if (ancho < 768){
+					ul1.style.display = 'none';
+			  }
+		});
+		var ck = 0;
+		
+		function MostrarMenu (){
+			var esVisible = $("#a7").is(":visible");
+			var ancho = screen.width;
+				if (ancho < 768) {
+				if (esVisible == false) {
+
+				ul1.style.display = 'block';
+		
+					
+
+				} else if (esVisible == true) {
+
+					ul1.style.display = 'none';
+
+				}				
+			}
+
+
+
+		}
+
+
+	</script>
+
+
+	<!footer>
+
+
+
+<div class="footer-basic">
+        <footer>
+            <div class="social">
+            	<a href="#"><i class="icon ion-social-instagram"><img src="https://img2.freepng.es/20180622/gkg/kisspng-logo-computer-icons-white-instagram-5b2d14ce620c29.2273864015296811024016.jpg" height="30px"></i></a>
+
+            	<a href="#"><i class="icon ion-social-twitter"><img src="https://image.flaticon.com/icons/png/512/25/25660.png" height="30px;"></i></a>
+
+            	<a href="#"><i class="icon ion-social-facebook"> <img src="https://c0.klipartz.com/pngpicture/615/791/gratis-png-computadora-iconos-facebook-simbolo-boton-redes-sociales-facebook.png" height="30px;"></i></a></div>
+             
+             <ul class="list-inline">
+                <li class="list-inline-item"><a href="#">Home</a></li>
+               
+                <li class="list-inline-item"><a href="#">About</a></li>
+                <li class="list-inline-item"><a href="#">Terms</a></li>
+                <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+            </ul>
+            <p class="copyright">nombre de compañía © 2021</p>
+        </footer>
+    </div>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    
+</body>
+</html>
